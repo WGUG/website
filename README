@@ -3,3 +3,6 @@ instalacja:
 z pliku social.html nalezy skopiowac wszystko pomiedzy znadznikami:
 1. <!-- head start --> ... <!-- head stop --> i wkleic zawartosc tuz przed </head> w docelowym index.html
 2. <body> ... </body> i wkleic zawartosc tuz przed </body> w docelowym index.html
+
+UWAGA:
+facebook widget zacznie dzialac jak wgug bedzie mialo przynajmniej 25fanow
