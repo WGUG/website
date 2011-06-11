@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+        <title>wgug social-script</title> 
+
+        <style type='text/css' media='all'>
+            #panelek{display:block;padding:0;z-index:100}* html #panelek{position:absolute}#panelek img{border:none;margin:0;padding:0}.panelek-grupa{float:left;zoom:1}#panelek-linki{float:left;width:70px}#panelek-linki img{border:none;display:block;height:32px;margin:0 auto;width:32px}#panelek-widget{float:left;padding:10px 0 18px 10px}#panelek-ikony{position:absolute;top:-1px;width:32px;z-index:110}#panelek-ikony img{border:none;height:20px;margin:0;width:20px}#panelek-ikony ul{bottom:-10px;left:0;position:relative;width:32px}#panelek-ikony ul li{height:20px;padding:0 6px 10px;width:20px}#panelek-ikony ul,#panelek-linki ul,#panelek-ikony li,#panelek-linki li{display:block;list-style:none;margin:0;padding:0}#panelek-linki li{padding:5px;text-align:center;width:70px}#panelek-linki a{border:none;font-size:10px;text-decoration:none}#panelek-autor a{font-family:Segoe UI, Tahoma;font-size:10px;text-decoration:none}
+        </style>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.1.min.js'></script>
+        <script type="text/javascript"> 
+            jQuery(document).ready(function () {var hideDelay=200;var hideDelayTimer=null;jQuery("#panelek").hover(function(){if(hideDelayTimer)clearTimeout(hideDelayTimer);jQuery("#panelek").animate({left:'0'},"normal");},function(){if(hideDelayTimer)clearTimeout(hideDelayTimer);hideDelayTimer=setTimeout(function(){hideDelayTimer=null;jQuery("#panelek").animate({left:'-302'},"normal");},hideDelay);});});
+        </script> 
+        <style type="text/css"> 
+            #panelek-ikony			{background: transparent url('https://lh6.googleusercontent.com/-wHzgoPXRJO4/TfEgdpU6vCI/AAAAAAAAAdI/RDD3DFzye2Y/s512/handle-lewy-jasny.png') no-repeat right top; padding-top: 1px; padding-right: 1px;}
+            #panelek-ikony ul		{background: transparent url('https://lh6.googleusercontent.com/-wHzgoPXRJO4/TfEgdpU6vCI/AAAAAAAAAdI/RDD3DFzye2Y/s512/handle-lewy-jasny.png') no-repeat right bottom; padding-bottom: 1px; padding-right: 1px;}
+            body						{font-family: Tahoma, Arial, Helvetica, sans-serif;}
+        </style> 
+    </head> 
+    <body> 
+        <div id="panelek" style="top: 90px; width: 300px; left: -302px; border-right: 1px solid #ccc; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #fff; position: fixed;"> 
+            <div id="panelek-contener" class="panelek-contener"> 
+                <div id='panelek-widget' class='panelek-grupa'>
+                    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwgug&amp;width=282&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=false&amp;height=395" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:282px; height:395px;"></iframe>    
+                </div>
+            </div>
+            <div id="panelek-ikony" style="right: -32px;"> 
+                <ul>
+                    <li>
+                        <a href='http://twitter.com/giswgug' title='Twitter'><img src='https://lh6.googleusercontent.com/-41SVG5_6yXA/TfEDcX7vvOI/AAAAAAAAAc0/06gc-EYaxnY/twitter-20.png' alt='Twitter' /></a>
+                    </li>
+                    <li>
+                        <a href='http://delicious.com/wgug' title='Delicious'><img src='https://lh6.googleusercontent.com/-cDipEO___OQ/TfEDbSErefI/AAAAAAAAAck/7ya2ctdK9tE/delicious-20.png' alt='Delicious' /></a>
+                    </li>
+                    <li>
+                        <a href='http://www.google.com/profiles/giswgug' title='Buzz'><img src='https://lh4.googleusercontent.com/-AxuYQ0JlTQI/TfEDbSPNl0I/AAAAAAAAAcc/EInhL51qtCM/buzz-20.png' alt='Buzz' /></a>
+                    </li>
+                    <li>
+                        <a href='http://www.youtube.com/giswgug' title='YouTube'><img src='https://lh5.googleusercontent.com/-5oC6psyB0Cs/TfEDcnVZkrI/AAAAAAAAAc4/dENSKwhUOyw/youtube-20.png' alt='YouTube' /></a>
+                    </li>
+                    <li>
+                        <a href='http://www.facebook.com/wgug' title='Facebook'><img src='https://lh3.googleusercontent.com/-0_wLdFjzazE/TfEDbU00DtI/AAAAAAAAAcg/mux6gZAMsmY/facebook-20.png' alt='Facebook' /></a>
+                    </li>
+                    <li>
+                        <a href='http://picasaweb.google.pl/giswgug' title='Picasa'><img src='https://lh6.googleusercontent.com/-fpc_3n7hVKM/TfEDb3gR84I/AAAAAAAAAcw/MrHABsjPu8U/picasa-20.png' alt='Picasa' /></a>
+                    </li>
+                    <li>
+                        <a href='http://www.slideshare.net/wgug' title='Slideshare'><img src='https://lh3.googleusercontent.com/-V6Gx9ey7ZtY/TfPFGxy4LoI/AAAAAAAAAdU/c1md1ZnX1Ao/slideshare-20.png' alt='Slideshare' /></a>
+                    </li>
+                    <li>
+                        <a href='https://github.com/organizations/WGUG' title='Github'><img src='https://lh4.googleusercontent.com/-hnrVgVhF-oo/TfPIj3bdl-I/AAAAAAAAAdY/vzNDCScorsE/github-20.png' alt='Github' /></a>
+                    </li>
+                </ul>
+            </div> 
+        </div>  
+    </body> 
+</html> 

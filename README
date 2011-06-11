@@ -1,0 +1,5 @@
+instalacja:
+
+z pliku index.html nalezy skopiowac wszystko pomiedzy znadznikami:
+1. <head> ... </head> i wkleic zawartosc tuz przed </head>
+2. <body> ... </body> i wkleic zawartosc tuz przed </body>
